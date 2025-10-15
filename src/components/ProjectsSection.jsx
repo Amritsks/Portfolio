@@ -3,32 +3,32 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Restaurant Website",
+    description: "I Developed a responsive campus restaurant website enabling online ordering and menu management.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["MERN", "TailwindCSS"],
+    demoUrl: "https://restaurant-website-psi-tawny.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/Restaurant-website",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Speech Studio",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Developed a Speech Studio app with real-time voice-to-text and text-to-speech features, enhanced with interactive wave animations.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["MERN", "TailwindCSS"],
+    demoUrl: "https://speech-studio-five.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/SpeechStudio",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "E-commerce website",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Built a visually engaging e-commerce website frontend with smooth animations and interactive UI components.",
     image: "/projects/project3.png",
     tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://e-commerce-website-bay-one.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/ECommerce-website",
   },
 ];
 
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/Amritsks"
           >
             Check My Github <ArrowRight size={16} />
           </a>

@@ -5,7 +5,6 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitch,
   Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -56,10 +55,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:amritsks1111@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    amritsks1111@gmail.com
                   </a>
                 </div>
               </div>
@@ -73,7 +72,7 @@ export const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +91 80512 67769
                   </a>
                 </div>
               </div>
@@ -84,7 +83,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                     Jaipur, Rajasthan, India
                   </a>
                 </div>
               </div>
@@ -93,17 +92,14 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/in/amritshrivastav/" target="_blank">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
+                {/* <a href="https://discordapp.com/users/amritKumar0095" target="_blank">
                   <Twitter />
-                </a>
-                <a href="#" target="_blank">
+                </a> */}
+                <a href="https://www.instagram.com/amrit.srivastava___?igsh=MW5iZW1jbmZjemp0aQ==" target="_blank">
                   <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
                 </a>
               </div>
             </div>
@@ -130,7 +126,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Name..."
                 />
               </div>
 
@@ -148,7 +144,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="xyz@gmail.com"
                 />
               </div>
 
