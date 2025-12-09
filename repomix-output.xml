@@ -1,0 +1,2125 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+index.html
+package.json
+public/vite.svg
+README.md
+src/App.jsx
+src/assets/react.svg
+src/components/AboutSection.jsx
+src/components/ContactSection.jsx
+src/components/Footer.jsx
+src/components/HeroSection.jsx
+src/components/Navbar.jsx
+src/components/ProjectsSection.jsx
+src/components/SkillsSection.jsx
+src/components/StarBackground.jsx
+src/components/ThemeToggle.jsx
+src/components/ui/toast.jsx
+src/components/ui/toaster.jsx
+src/hooks/use-toast.js
+src/index.css
+src/lib/utils.js
+src/main.jsx
+src/pages/Home.jsx
+src/pages/NotFound.jsx
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".gitignore">
+node_modules
+</file>
+
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/a-icon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1"
+    />
+
+    <title>AK Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="public/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+</file>
+
+<file path="README.md">
+# Build a Modern Portfolio Website with React & TailwindCSS
+
+<div align="center">
+  <br />
+  <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
+    <img src="./banner.png" alt="Portfolio Website Banner">
+  </a>
+  <br />
+  <div>
+    <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/-Lucide Icons-FD4D4D?style=for-the-badge&logo=lucide" alt="Lucide Icons" />
+    <img src="https://img.shields.io/badge/-Radix UI-9D4EDD?style=for-the-badge&logo=data:image/svg+xml;base64..." alt="Radix UI" />
+  </div>
+  <h3 align="center">Create a Stunning Developer Portfolio with Animations, Dark Mode, and Projects Showcase</h3>
+  <div align="center">
+    Follow the full video tutorial on 
+    <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank"><b>YouTube</b></a>
+  </div>
+  <br />
+</div>
+
+## 📋 Table of Contents
+
+1. [Introduction](#-introduction)
+2. [Tech Stack](#-tech-stack)
+3. [Features](#-features)
+4. [Quick Start](#-quick-start)
+5. [Screenshots](#-screenshots)
+6. [Deployment](#-deployment)
+
+---
+
+## 🚀 Introduction
+
+In this tutorial, you'll learn how to build a modern portfolio website using **React**, **TailwindCSS**, **Vite**, and **Lucide Icons**. From dark mode support to responsive animations and deployable project showcases, this video walks you through every step—perfect for developers looking to level up their frontend skills or apply for jobs.
+
+🎥 Watch the full tutorial: [YouTube](https://youtu.be/YOUR_VIDEO_ID)
+
+---
+
+## ⚙️ Tech Stack
+
+* **React** – Component-based UI development
+* **Vite** – Lightning-fast build tool
+* **TailwindCSS** – Utility-first CSS for styling
+* **Lucide Icons** – Clean and beautiful icon pack
+* **Radix UI** – Accessible component primitives
+* **TypeScript (optional)** – Type safety and tooling
+* **GitHub & Vercel** – Deployment
+
+---
+
+## ⚡️ Features
+
+* 🌑 **Light/Dark Mode Toggle**
+  Save theme preference in local storage with beautiful transitions
+
+* 💫 **Animated Backgrounds**
+  Stars, meteors, scroll effects, and glowing UI elements
+
+* 📱 **Responsive Navigation**
+  Desktop and mobile menus with glassmorphism
+
+* 👨‍💻 **Hero & About Sections**
+  Showcase who you are with smooth intro animations and buttons
+
+* 📊 **Skills Grid**
+  Filterable progress bars and categories with animated width
+
+* 🖼️ **Projects Showcase**
+  Display screenshots, tech stacks, and GitHub/demo links
+
+* 📩 **Contact Section**
+  Social icons + responsive contact form with toast notifications
+
+* 🚀 **One-Click Deployment**
+  Easily host your site with Vercel and GitHub
+
+---
+
+## 👌 Quick Start
+
+### Prerequisites
+
+* [Node.js](https://nodejs.org/)
+* [Git](https://git-scm.com/)
+
+### Clone and Run
+
+```bash
+git clone https://github.com/yourusername/react-tailwind-portfolio.git
+cd react-tailwind-portfolio
+npm install
+npm run dev
+```
+
+Your app will be available at: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🖼️ Screenshots
+
+> 📸 Add screenshots of your Hero section, Projects grid, and Contact form here to show off your site.
+
+---
+
+## ☁️ Deployment
+
+### Deploy on Vercel
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import your repository
+4. Click **Deploy**
+
+Your live website will be hosted on a custom subdomain (e.g. `https://your-name.vercel.app`)
+
+---
+
+## 🔗 Useful Links
+
+* [React Documentation](https://reactjs.org/)
+* [Tailwind CSS Docs](https://tailwindcss.com/)
+* [Lucide Icons](https://lucide.dev/)
+* [Radix UI](https://www.radix-ui.com/)
+* [Vite](https://vitejs.dev/)
+* [Vercel](https://vercel.com/)
+
+---
+
+Let me know if you'd like me to generate a version with your actual GitHub repo, YouTube URL, or a banner image suggestion!
+</file>
+
+<file path="src/App.jsx">
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
+import { Toaster } from "@/components/ui/toaster";
+
+function App() {
+  return (
+    <>
+      <Toaster />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+}
+
+export default App;
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/components/AboutSection.jsx">
+import { Briefcase, Code, User, Terminal } from "lucide-react";
+
+export const AboutSection = () => {
+  return (
+    <section id="about" className="py-24 px-4 relative">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          About <span className="text-primary"> Me</span>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold">
+              Passionate Web Developer & Tech Creator
+            </h3>
+
+            <p className="text-muted-foreground">
+              With 2 years of hands-on experience in web development,
+              I specialize in building responsive, accessible, and high-performance 
+              web applications using modern technologies.
+            </p>
+
+            <p className="text-muted-foreground">
+              I am passionate about crafting clean and efficient solutions to real-world problems
+              and continuously strive to enhance my skills to stay current with the evolving trends in web development.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+              <a href="#contact" className="cosmic-button">Get In Touch</a>
+
+              <a
+                href="/AmritKumar.resume.pdf"
+                download="AmritKumar.resume.pdf"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+              >
+                Download Resume
+              </a>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6">
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Code className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <p className="text-muted-foreground">
+                    Creating responsive websites and web applications with modern frameworks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Terminal className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">JAVA Development</h4>
+                  <p className="text-muted-foreground">
+                    Engineering high-performance, secure, and scalable solutions with Java.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Briefcase className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <p className="text-muted-foreground">
+                    Leading projects from conception to completion with agile methodologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+</file>
+
+<file path="src/components/ContactSection.jsx">
+<<<<<<< HEAD
+import {
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+  Twitter,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
+
+export const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+      setIsSubmitting(false);
+    }, 1500);
+  };
+  return (
+    <section id="contact" className="py-24 px-4 relative bg-secondary/30">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Get In <span className="text-primary"> Touch</span>
+        </h2>
+
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Have a project in mind or want to collaborate? Feel free to reach out.
+          I'm always open to discussing new opportunities.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="space-y-8">
+            <h3 className="text-2xl font-semibold mb-6">
+              {" "}
+              Contact Information
+            </h3>
+
+            <div className="space-y-6 justify-center">
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Mail className="h-6 w-6 text-primary" />{" "}
+                </div>
+                <div>
+                  <h4 className="font-medium"> Email</h4>
+                  <a
+                    href="mailto:amritsks1111@gmail.com"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    amritsks1111@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Phone className="h-6 w-6 text-primary" />{" "}
+                </div>
+                <div>
+                  <h4 className="font-medium"> Phone</h4>
+                  <a
+                    href="tel:+11234567890"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    +91 80512 67769
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                </div>
+                <div>
+                  <h4 className="font-medium"> Location</h4>
+                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                     Jaipur, Rajasthan, India
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-8">
+              <h4 className="font-medium mb-4"> Connect With Me</h4>
+              <div className="flex space-x-4 justify-center">
+                <a href="https://www.linkedin.com/in/amritshrivastav/" target="_blank">
+                  <Linkedin />
+                </a>
+                {/* <a href="https://discordapp.com/users/amritKumar0095" target="_blank">
+                  <Twitter />
+                </a> */}
+                <a href="https://www.instagram.com/amrit.srivastava___?igsh=MW5iZW1jbmZjemp0aQ==" target="_blank">
+                  <Instagram />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="bg-card p-8 rounded-lg shadow-xs"
+            onSubmit={handleSubmit}
+          >
+            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+
+            <form className="space-y-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  placeholder="Name..."
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  placeholder="xyz@gmail.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                  placeholder="Hello, I'd like to talk about..."
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={cn(
+                  "cosmic-button w-full flex items-center justify-center gap-2"
+                )}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+                <Send size={16} />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+=======
+import {
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+  Twitter,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
+
+export const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+      setIsSubmitting(false);
+    }, 1500);
+  };
+  return (
+    <section id="contact" className="py-24 px-4 relative bg-secondary/30">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Get In <span className="text-primary"> Touch</span>
+        </h2>
+
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Have a project in mind or want to collaborate? Feel free to reach out.
+          I'm always open to discussing new opportunities.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="space-y-8">
+            <h3 className="text-2xl font-semibold mb-6">
+              {" "}
+              Contact Information
+            </h3>
+
+            <div className="space-y-6 justify-center">
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Mail className="h-6 w-6 text-primary" />{" "}
+                </div>
+                <div>
+                  <h4 className="font-medium"> Email</h4>
+                  <a
+                    href="mailto:amritsks1111@gmail.com"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    amritsks1111@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Phone className="h-6 w-6 text-primary" />{" "}
+                </div>
+                <div>
+                  <h4 className="font-medium"> Phone</h4>
+                  <a
+                    href="tel:+11234567890"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    +91 80512 67769
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                </div>
+                <div>
+                  <h4 className="font-medium"> Location</h4>
+                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                     Jaipur, Rajasthan, India
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-8">
+              <h4 className="font-medium mb-4"> Connect With Me</h4>
+              <div className="flex space-x-4 justify-center">
+                <a href="https://www.linkedin.com/in/amritshrivastav/" target="_blank">
+                  <Linkedin />
+                </a>
+                {/* <a href="https://discordapp.com/users/amritKumar0095" target="_blank">
+                  <Twitter />
+                </a> */}
+                <a href="https://www.instagram.com/amrit.srivastava___?igsh=MW5iZW1jbmZjemp0aQ==" target="_blank">
+                  <Instagram />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="bg-card p-8 rounded-lg shadow-xs"
+            onSubmit={handleSubmit}
+          >
+            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+
+            <form className="space-y-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  placeholder="Name..."
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  placeholder="xyz@gmail.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                  placeholder="Hello, I'd like to talk about..."
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={cn(
+                  "cosmic-button w-full flex items-center justify-center gap-2"
+                )}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+                <Send size={16} />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+>>>>>>> b933580 (final commit)
+</file>
+
+<file path="src/components/Footer.jsx">
+<<<<<<< HEAD
+import { ArrowUp } from "lucide-react";
+
+export const Footer = () => {
+  return (
+    <footer className="py-12 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap justify-between items-center">
+      {" "}
+      <p className="text-sm text-muted-foreground">
+        {" "}
+        &copy; {new Date().getFullYear()} Amrit kumar.co. All rights reserved.
+      </p>
+      <a
+        href="#hero"
+        className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+      >
+        <ArrowUp size={20} />
+      </a>
+    </footer>
+  );
+};
+=======
+import { ArrowUp } from "lucide-react";
+
+export const Footer = () => {
+  return (
+    <footer className="py-12 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap justify-between items-center">
+      {" "}
+      <p className="text-sm text-muted-foreground">
+        {" "}
+        &copy; {new Date().getFullYear()} Amrit kumar.co. All rights reserved.
+      </p>
+      <a
+        href="#hero"
+        className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+      >
+        <ArrowUp size={20} />
+      </a>
+    </footer>
+  );
+};
+>>>>>>> b933580 (final commit)
+</file>
+
+<file path="src/components/HeroSection.jsx">
+<<<<<<< HEAD
+import { ArrowDown } from "lucide-react";
+
+export const HeroSection = () => {
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4"
+    >
+      <div className="container max-w-4xl mx-auto text-center z-10">
+        <div className="space-y-6">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
+            <span className="text-primary opacity-0 animate-fade-in-delay-1">
+              {" "}
+              Amrit
+            </span>
+            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
+              {" "}
+              Kumar
+            </span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+            I am Passionate web developer.
+            Specializing in both front-end and back-end development, I build interfaces that are
+             beautiful, functional and Responsive.
+          </p>
+
+          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+            <a href="#projects" className="cosmic-button">
+              View My Work
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+        <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
+        <ArrowDown className="h-5 w-5 text-primary" />
+      </div>
+    </section>
+  );
+};
+=======
+import { ArrowDown } from "lucide-react";
+
+export const HeroSection = () => {
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4"
+    >
+      <div className="container max-w-4xl mx-auto text-center z-10">
+        <div className="space-y-6">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
+            <span className="text-primary opacity-0 animate-fade-in-delay-1">
+              {" "}
+              Amrit
+            </span>
+            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
+              {" "}
+              Kumar
+            </span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+            I am Passionate web developer.
+            Specializing in both front-end and back-end development, I build interfaces that are
+             beautiful, functional and Responsive.
+          </p>
+
+          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+            <a href="#projects" className="cosmic-button">
+              View My Work
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+        <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
+        <ArrowDown className="h-5 w-5 text-primary" />
+      </div>
+    </section>
+  );
+};
+>>>>>>> b933580 (final commit)
+</file>
+
+<file path="src/components/Navbar.jsx">
+<<<<<<< HEAD
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const navItems = [
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
+];
+
+export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.screenY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  return (
+    <nav
+      className={cn(
+        "fixed w-full z-40 transition-all duration-300",
+        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+      )}
+    >
+      <div className="container flex items-center justify-between">
+        <a
+          className="text-xl font-bold text-primary flex items-center"
+          href="#hero"
+        >
+          <span className="relative z-10">
+            <span className="text-glow text-foreground"> Amrit Tech</span>{" "}
+            Portfolio
+          </span>
+        </a>
+
+        {/* desktop nav */}
+        <div className="hidden md:flex space-x-8">
+          {navItems.map((item, key) => (
+            <a
+              key={key}
+              href={item.href}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+
+        {/* mobile nav */}
+
+        <button
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          className="md:hidden p-2 text-foreground z-50"
+          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+        </button>
+
+        <div
+          className={cn(
+            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
+            "transition-all duration-300 md:hidden",
+            isMenuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          )}
+        >
+          <div className="flex flex-col space-y-8 text-xl">
+            {navItems.map((item, key) => (
+              <a
+                key={key}
+                href={item.href}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+=======
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const navItems = [
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
+];
+
+export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.screenY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  return (
+    <nav
+      className={cn(
+        "fixed w-full z-40 transition-all duration-300",
+        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+      )}
+    >
+      <div className="container flex items-center justify-between">
+        <a
+          className="text-xl font-bold text-primary flex items-center"
+          href="#hero"
+        >
+          <span className="relative z-10">
+            <span className="text-glow text-foreground"> Amrit Tech</span>{" "}
+            Portfolio
+          </span>
+        </a>
+
+        {/* desktop nav */}
+        <div className="hidden md:flex space-x-8">
+          {navItems.map((item, key) => (
+            <a
+              key={key}
+              href={item.href}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+
+        {/* mobile nav */}
+
+        <button
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          className="md:hidden p-2 text-foreground z-50"
+          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+        </button>
+
+        <div
+          className={cn(
+            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
+            "transition-all duration-300 md:hidden",
+            isMenuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          )}
+        >
+          <div className="flex flex-col space-y-8 text-xl">
+            {navItems.map((item, key) => (
+              <a
+                key={key}
+                href={item.href}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+>>>>>>> b933580 (final commit)
+</file>
+
+<file path="src/components/ProjectsSection.jsx">
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
+
+const projects = [
+  {
+    id: 1,
+    title: "Restaurant Website",
+    description: "I Developed a responsive campus restaurant website enabling online ordering and menu management.",
+    image: "/projects/project1.png",
+    tags: ["MERN", "TailwindCSS"],
+    demoUrl: "https://restaurant-website-psi-tawny.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/Restaurant-website",
+  },
+  {
+    id: 2,
+    title: "Speech Studio",
+    description:
+      "Developed a Speech Studio app with real-time voice-to-text and text-to-speech features, enhanced with interactive wave animations.",
+    image: "/projects/project2.png",
+    tags: ["MERN", "TailwindCSS"],
+    demoUrl: "https://speech-studio-five.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/SpeechStudio",
+  },
+  {
+    id: 3,
+    title: "E-commerce website",
+    description:
+      "Built a visually engaging e-commerce website frontend with smooth animations and interactive UI components.",
+    image: "/projects/project3.png",
+    tags: ["React.jsx", "TailwindCSS"],
+    demoUrl: "https://e-commerce-website-bay-one.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/ECommerce-website",
+  },
+];
+
+export const ProjectsSection = () => {
+  return (
+    <section id="projects" className="py-24 px-4 relative">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Featured <span className="text-primary"> Projects </span>
+        </h2>
+
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Here are some of my recent projects. Each project was carefully
+          crafted with attention to detail, performance, and user experience.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, key) => (
+            <div
+              key={key}
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+            >
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              <div className="p-6">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag) => (
+                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3">
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+            href="https://github.com/Amritsks"
+          >
+            Check My Github <ArrowRight size={16} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+</file>
+
+<file path="src/components/SkillsSection.jsx">
+<<<<<<< HEAD
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+
+const skills = [
+  // Frontend
+  { name: "HTML/CSS", level: 95, category: "frontend" },
+  { name: "JavaScript", level: 90, category: "frontend" },
+  { name: "React", level: 90, category: "frontend" },
+  { name: "TypeScript", level: 85, category: "frontend" },
+  { name: "Tailwind CSS", level: 95, category: "frontend" },
+  { name: "Next.js", level: 80, category: "frontend" },
+
+  // Backend
+  { name: "Node.js", level: 80, category: "backend" },
+  { name: "Express.js", level: 75, category: "backend" },
+  { name: "MongoDB", level: 70, category: "backend" },
+  { name: "GraphQL", level: 60, category: "backend" },
+
+  // Tools
+  { name: "Git/GitHub", level: 90, category: "tools" },
+  { name: "Intellij IDEA", level: 90, category: "tools" },
+  { name: "Figma", level: 85, category: "tools" },
+  { name: "VS Code", level: 95, category: "tools" },
+];
+
+const categories = ["all", "frontend", "backend", "tools"];
+
+export const SkillsSection = () => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  const filteredSkills = skills.filter(
+    (skill) => activeCategory === "all" || skill.category === activeCategory
+  );
+
+  return (
+    <section id="skills" className="py-24 px-4 relative bg-muted/30">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-4xl font-bold text-center mb-14">
+          My <span className="text-primary">Skills</span>
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
+          {categories.map((category, key) => (
+            <button
+              key={key}
+              aria-label={`Filter skills by ${category}`}
+              onClick={() => setActiveCategory(category)}
+              className={cn(
+                "px-5 py-2 rounded-full border text-sm font-medium transition-all duration-300 capitalize",
+                activeCategory === category
+                  ? "bg-primary text-white shadow-md"
+                  : "bg-background text-foreground border-border hover:bg-secondary"
+              )}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredSkills.map((skill, key) => (
+            <div
+              key={key}
+              className="bg-card p-6 rounded-2xl shadow-md border border-border transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg"
+            >
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-foreground">
+                  {skill.name}
+                </h3>
+              </div>
+
+              <div className="w-full bg-muted h-2 rounded-full overflow-hidden">
+                <div
+                  className="bg-primary h-2 rounded-full transition-all duration-1000 ease-out"
+                  style={{ width: `${skill.level}%` }}
+                />
+              </div>
+
+              <div className="text-right mt-1">
+                <span className="text-sm text-muted-foreground">
+                  {skill.level}%
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+=======
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+
+const skills = [
+  // Frontend
+  { name: "HTML/CSS", level: 95, category: "frontend" },
+  { name: "JavaScript", level: 90, category: "frontend" },
+  { name: "React", level: 90, category: "frontend" },
+  { name: "TypeScript", level: 85, category: "frontend" },
+  { name: "Tailwind CSS", level: 95, category: "frontend" },
+  { name: "Next.js", level: 80, category: "frontend" },
+
+  // Backend
+  { name: "Node.js", level: 80, category: "backend" },
+  { name: "Express.js", level: 75, category: "backend" },
+  { name: "MongoDB", level: 70, category: "backend" },
+  { name: "GraphQL", level: 60, category: "backend" },
+
+  // Tools
+  { name: "Git/GitHub", level: 90, category: "tools" },
+  { name: "Intellij IDEA", level: 90, category: "tools" },
+  { name: "Figma", level: 85, category: "tools" },
+  { name: "VS Code", level: 95, category: "tools" },
+];
+
+const categories = ["all", "frontend", "backend", "tools"];
+
+export const SkillsSection = () => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  const filteredSkills = skills.filter(
+    (skill) => activeCategory === "all" || skill.category === activeCategory
+  );
+
+  return (
+    <section id="skills" className="py-24 px-4 relative bg-muted/30">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-4xl font-bold text-center mb-14">
+          My <span className="text-primary">Skills</span>
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
+          {categories.map((category, key) => (
+            <button
+              key={key}
+              aria-label={`Filter skills by ${category}`}
+              onClick={() => setActiveCategory(category)}
+              className={cn(
+                "px-5 py-2 rounded-full border text-sm font-medium transition-all duration-300 capitalize",
+                activeCategory === category
+                  ? "bg-primary text-white shadow-md"
+                  : "bg-background text-foreground border-border hover:bg-secondary"
+              )}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredSkills.map((skill, key) => (
+            <div
+              key={key}
+              className="bg-card p-6 rounded-2xl shadow-md border border-border transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg"
+            >
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-foreground">
+                  {skill.name}
+                </h3>
+              </div>
+
+              <div className="w-full bg-muted h-2 rounded-full overflow-hidden">
+                <div
+                  className="bg-primary h-2 rounded-full transition-all duration-1000 ease-out"
+                  style={{ width: `${skill.level}%` }}
+                />
+              </div>
+
+              <div className="text-right mt-1">
+                <span className="text-sm text-muted-foreground">
+                  {skill.level}%
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+>>>>>>> b933580 (final commit)
+</file>
+
+<file path="src/components/StarBackground.jsx">
+import { useEffect, useState } from "react";
+
+// id, size, x, y, opacity, animationDuration
+// id, size, x, y, delay, animationDuration
+
+export const StarBackground = () => {
+  const [stars, setStars] = useState([]);
+  const [meteors, setMeteors] = useState([]);
+
+  useEffect(() => {
+    generateStars();
+    generateMeteors();
+
+    const handleResize = () => {
+      generateStars();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const generateStars = () => {
+    const numberOfStars = Math.floor(
+      (window.innerWidth * window.innerHeight) / 10000
+    );
+
+    const newStars = [];
+
+    for (let i = 0; i < numberOfStars; i++) {
+      newStars.push({
+        id: i,
+        size: Math.random() * 3 + 1,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        opacity: Math.random() * 0.5 + 0.5,
+        animationDuration: Math.random() * 4 + 2,
+      });
+    }
+
+    setStars(newStars);
+  };
+
+  const generateMeteors = () => {
+    const numberOfMeteors = 4;
+    const newMeteors = [];
+
+    for (let i = 0; i < numberOfMeteors; i++) {
+      newMeteors.push({
+        id: i,
+        size: Math.random() * 2 + 1,
+        x: Math.random() * 100,
+        y: Math.random() * 20,
+        delay: Math.random() * 15,
+        animationDuration: Math.random() * 3 + 3,
+      });
+    }
+
+    setMeteors(newMeteors);
+  };
+
+  return (
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+      {stars.map((star) => (
+        <div
+          key={star.id}
+          className="star animate-pulse-subtle"
+          style={{
+            width: star.size + "px",
+            height: star.size + "px",
+            left: star.x + "%",
+            top: star.y + "%",
+            opacity: star.opacity,
+            animationDuration: star.animationDuration + "s",
+          }}
+        />
+      ))}
+
+      {meteors.map((meteor) => (
+        <div
+          key={meteor.id}
+          className="meteor animate-meteor"
+          style={{
+            width: meteor.size * 50 + "px",
+            height: meteor.size * 2 + "px",
+            left: meteor.x + "%",
+            top: meteor.y + "%",
+            animationDelay: meteor.delay,
+            animationDuration: meteor.animationDuration + "s",
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+</file>
+
+<file path="src/components/ThemeToggle.jsx">
+<<<<<<< HEAD
+import { Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+
+export const ThemeToggle = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true); // default: dark mode
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme === "light") {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
+      // Default to dark if no theme set
+      localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    if (isDarkMode) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setIsDarkMode(false);
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+    }
+  };
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className={cn(
+        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "focus:outline-none"
+      )}
+    >
+      {isDarkMode ? (
+        <Sun className="h-6 w-6 text-yellow-300" />
+      ) : (
+        <Moon className="h-6 w-6 text-blue-900" />
+      )}
+    </button>
+  );
+};
+=======
+import { Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+
+export const ThemeToggle = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true); // default: dark mode
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme === "light") {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
+      // Default to dark if no theme set
+      localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    if (isDarkMode) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setIsDarkMode(false);
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+    }
+  };
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className={cn(
+        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "focus:outline-none"
+      )}
+    >
+      {isDarkMode ? (
+        <Sun className="h-6 w-6 text-yellow-300" />
+      ) : (
+        <Moon className="h-6 w-6 text-blue-900" />
+      )}
+    </button>
+  );
+};
+>>>>>>> b933580 (final commit)
+</file>
+
+<file path="src/components/ui/toast.jsx">
+import * as React from "react";
+import * as ToastPrimitives from "@radix-ui/react-toast";
+import { cva } from "class-variance-authority";
+import { X } from "lucide-react";
+
+import { cn } from "@/lib/utils";
+
+const ToastProvider = ToastPrimitives.Provider;
+
+const ToastViewport = React.forwardRef(({ className, ...props }, ref) => (
+  <ToastPrimitives.Viewport
+    ref={ref}
+    className={cn(
+      "fixed top-0 z-100 flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]",
+      className
+    )}
+    {...props}
+  />
+));
+ToastViewport.displayName = ToastPrimitives.Viewport.displayName;
+
+const toastVariants = cva(
+  "group pointer-events-auto relative flex w-full items-center justify-between space-x-4 overflow-hidden rounded-md border p-6 pr-8 shadow-lg transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[swipe=end]:animate-out data-[state=closed]:fade-out-80 data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-top-full sm:data-[state=open]:slide-in-from-bottom-full",
+  {
+    variants: {
+      variant: {
+        default: "border bg-background text-foreground",
+        destructive:
+          "destructive group border-destructive bg-destructive text-destructive-foreground",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
+);
+
+const Toast = React.forwardRef(({ className, variant, ...props }, ref) => {
+  return (
+    <ToastPrimitives.Root
+      ref={ref}
+      className={cn(toastVariants({ variant }), className)}
+      {...props}
+    />
+  );
+});
+Toast.displayName = ToastPrimitives.Root.displayName;
+
+const ToastAction = React.forwardRef(({ className, ...props }, ref) => (
+  <ToastPrimitives.Action
+    ref={ref}
+    className={cn(
+      "inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-transparent px-3 text-sm font-medium ring-offset-background transition-colors hover:bg-secondary focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group-[.destructive]:border-muted/40 hover:group-[.destructive]:border-destructive/30 hover:group-[.destructive]:bg-destructive hover:group-[.destructive]:text-destructive-foreground focus:group-[.destructive]:ring-destructive",
+      className
+    )}
+    {...props}
+  />
+));
+ToastAction.displayName = ToastPrimitives.Action.displayName;
+
+const ToastClose = React.forwardRef(({ className, ...props }, ref) => (
+  <ToastPrimitives.Close
+    ref={ref}
+    className={cn(
+      "absolute right-2 top-2 rounded-md p-1 text-foreground/50 opacity-0 transition-opacity hover:text-foreground focus:opacity-100 focus:outline-hidden focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 hover:group-[.destructive]:text-red-50 focus:group-[.destructive]:ring-red-400 focus:group-[.destructive]:ring-offset-red-600",
+      className
+    )}
+    toast-close=""
+    {...props}
+  >
+    <X className="h-4 w-4" />
+  </ToastPrimitives.Close>
+));
+ToastClose.displayName = ToastPrimitives.Close.displayName;
+
+const ToastTitle = React.forwardRef(({ className, ...props }, ref) => (
+  <ToastPrimitives.Title
+    ref={ref}
+    className={cn("text-sm font-semibold", className)}
+    {...props}
+  />
+));
+ToastTitle.displayName = ToastPrimitives.Title.displayName;
+
+const ToastDescription = React.forwardRef(({ className, ...props }, ref) => (
+  <ToastPrimitives.Description
+    ref={ref}
+    className={cn("text-sm opacity-90", className)}
+    {...props}
+  />
+));
+ToastDescription.displayName = ToastPrimitives.Description.displayName;
+
+export {
+  ToastProvider,
+  ToastViewport,
+  Toast,
+  ToastTitle,
+  ToastDescription,
+  ToastClose,
+  ToastAction,
+};
+</file>
+
+<file path="src/components/ui/toaster.jsx">
+import { useToast } from "@/hooks/use-toast";
+import {
+  Toast,
+  ToastClose,
+  ToastDescription,
+  ToastProvider,
+  ToastTitle,
+  ToastViewport,
+} from "@/components/ui/toast";
+
+export function Toaster() {
+  const { toasts } = useToast();
+
+  return (
+    <ToastProvider>
+      {toasts.map(function ({ id, title, description, action, ...props }) {
+        return (
+          <Toast key={id} {...props}>
+            <div className="grid gap-1">
+              {title && <ToastTitle>{title}</ToastTitle>}
+              {description && (
+                <ToastDescription>{description}</ToastDescription>
+              )}
+            </div>
+            {action}
+            <ToastClose />
+          </Toast>
+        );
+      })}
+      <ToastViewport />
+    </ToastProvider>
+  );
+}
+</file>
+
+<file path="src/hooks/use-toast.js">
+import * as React from "react";
+
+const TOAST_LIMIT = 1;
+const TOAST_REMOVE_DELAY = 1000000;
+
+let count = 0;
+
+function genId() {
+  count = (count + 1) % Number.MAX_SAFE_INTEGER;
+  return count.toString();
+}
+
+const toastTimeouts = new Map();
+
+const addToRemoveQueue = (toastId) => {
+  if (toastTimeouts.has(toastId)) {
+    return;
+  }
+
+  const timeout = setTimeout(() => {
+    toastTimeouts.delete(toastId);
+    dispatch({
+      type: "REMOVE_TOAST",
+      toastId: toastId,
+    });
+  }, TOAST_REMOVE_DELAY);
+
+  toastTimeouts.set(toastId, timeout);
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "ADD_TOAST":
+      return {
+        ...state,
+        toasts: [action.toast, ...state.toasts].slice(0, TOAST_LIMIT),
+      };
+
+    case "UPDATE_TOAST":
+      return {
+        ...state,
+        toasts: state.toasts.map((t) =>
+          t.id === action.toast.id ? { ...t, ...action.toast } : t
+        ),
+      };
+
+    case "DISMISS_TOAST": {
+      const { toastId } = action;
+
+      if (toastId) {
+        addToRemoveQueue(toastId);
+      } else {
+        state.toasts.forEach((toast) => {
+          addToRemoveQueue(toast.id);
+        });
+      }
+
+      return {
+        ...state,
+        toasts: state.toasts.map((t) =>
+          t.id === toastId || toastId === undefined
+            ? {
+                ...t,
+                open: false,
+              }
+            : t
+        ),
+      };
+    }
+    case "REMOVE_TOAST":
+      if (action.toastId === undefined) {
+        return {
+          ...state,
+          toasts: [],
+        };
+      }
+      return {
+        ...state,
+        toasts: state.toasts.filter((t) => t.id !== action.toastId),
+      };
+  }
+};
+
+const listeners = [];
+
+let memoryState = { toasts: [] };
+
+function dispatch(action) {
+  memoryState = reducer(memoryState, action);
+  listeners.forEach((listener) => {
+    listener(memoryState);
+  });
+}
+
+function toast(props) {
+  const id = genId();
+
+  const update = (props) =>
+    dispatch({
+      type: "UPDATE_TOAST",
+      toast: { ...props, id },
+    });
+  const dismiss = () => dispatch({ type: "DISMISS_TOAST", toastId: id });
+
+  dispatch({
+    type: "ADD_TOAST",
+    toast: {
+      ...props,
+      id,
+      open: true,
+      onOpenChange: (open) => {
+        if (!open) dismiss();
+      },
+    },
+  });
+
+  return {
+    id: id,
+    dismiss,
+    update,
+  };
+}
+
+function useToast() {
+  const [state, setState] = React.useState(memoryState);
+
+  React.useEffect(() => {
+    listeners.push(setState);
+    return () => {
+      const index = listeners.indexOf(setState);
+      if (index > -1) {
+        listeners.splice(index, 1);
+      }
+    };
+  }, [state]);
+
+  return {
+    ...state,
+    toast,
+    dismiss: (toastId) => dispatch({ type: "DISMISS_TOAST", toastId }),
+  };
+}
+
+export { useToast, toast };
+</file>
+
+<file path="src/index.css">
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-card: hsl(var(--card));
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.7s ease-out forwards;
+  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
+  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
+  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
+  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
+  --animate-meteor: meteor 5s linear infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes pulse-subtle {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+
+    --primary: 250 47% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+  }
+
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 222 47% 8%;
+
+    --primary: 250 65% 65%;
+    --primary-foreground: 213 31% 91%;
+
+    --border: 217 33% 20%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+@utility gradient-border {
+  @apply relative rounded-md;
+  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
+
+@utility cosmic-button {
+  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
+         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+         hover:scale-105 active:scale-95;
+}
+
+@utility star {
+  @apply absolute rounded-full bg-white;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+}
+
+@utility meteor {
+  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+</file>
+
+<file path="src/lib/utils.js">
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export const cn = (...inputs) => {
+  return twMerge(clsx(inputs));
+};
+</file>
+
+<file path="src/main.jsx">
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+</file>
+
+<file path="src/pages/Home.jsx">
+import { Navbar } from "../components/Navbar";
+import { ThemeToggle } from "../components/ThemeToggle";
+import { StarBackground } from "@/components/StarBackground";
+import { HeroSection } from "../components/HeroSection";
+import { AboutSection } from "../components/AboutSection";
+import { SkillsSection } from "../components/SkillsSection";
+import { ProjectsSection } from "../components/ProjectsSection";
+import { ContactSection } from "../components/ContactSection";
+import { Footer } from "../components/Footer";
+
+export const Home = () => {
+  return (
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      {/* Theme Toggle */}
+      <ThemeToggle />
+      {/* Background Effects */}
+      <StarBackground />
+
+      {/* Navbar */}
+      <Navbar />
+      {/* Main Content */}
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+};
+</file>
+
+<file path="src/pages/NotFound.jsx">
+export const NotFound = () => {
+  return <div> NotFound</div>;
+};
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+});
+</file>
+
+<file path="package.json">
+{
+  "name": "AKS portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@radix-ui/react-toast": "^1.2.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.501.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.5.1",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "vite": "^5.3.4"
+  }
+}
+</file>
+
+</files>

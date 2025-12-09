@@ -3,32 +3,42 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Restaurant Website",
+    description: "I Developed a responsive campus restaurant website enabling online ordering and menu management.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["MERN", "TailwindCSS"],
+    demoUrl: "https://restaurant-website-psi-tawny.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/Restaurant-website",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Speech Studio",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Developed a Speech Studio app with real-time voice-to-text and text-to-speech features, enhanced with interactive wave animations.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["MERN", "TailwindCSS"],
+    demoUrl: "https://speech-studio-five.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/SpeechStudio",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "CartIndia (E-commerce website)",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "A complete,Core production-ready e-commerce platform built using React (Vite), Node.js, Express, MongoDB, JWT Authentication, Cloudinary Image Upload, and Socket.io real-time updates.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React.jsx", "TailwindCSS"],
+    demoUrl: "https://cart-india-e-commerce-website.vercel.app/",
+    githubUrl: "https://github.com/Amritsks/CartIndia--E-commerce-Website",
+  },
+  {
+    id: 3,
+    title: "CartIndia (E-commerce website)",
+    description:
+      "TaskHandler Board is a full-stack productivity tool built with React and FastAPI. It helps individuals and teams visually manage projects using boards, lists, and cards — while integrating AI task extraction to automatically break down unstructured input (like text summaries or chat notes) into actionable tasks.",
+    image: "/projects/project4.png",
+    tags: ["React.jsx", "TailwindCSS"],
+    demoUrl: "https://task-handler-nine.vercel.app/dashboard",
+    githubUrl: "https://github.com/Amritsks/TaskHandler",
   },
 ];
 
@@ -37,7 +47,6 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
           Featured <span className="text-primary"> Projects </span>
         </h2>
 
@@ -69,10 +78,9 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {project.description}
-                </p>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
