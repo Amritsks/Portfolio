@@ -31,7 +31,7 @@ const projects = [
     githubUrl: "https://github.com/Amritsks/CartIndia--E-commerce-Website",
   },
   {
-    id: 3,
+    id: 4,
     title: "Task handler",
     description:
       "TaskHandler Board is a full-stack productivity tool built with React and FastAPI. It helps individuals and teams visually manage projects using boards, lists, and cards — while integrating AI task extraction to automatically break down unstructured input (like text summaries or chat notes) into actionable tasks.",
